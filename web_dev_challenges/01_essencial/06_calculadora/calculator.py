@@ -1,3 +1,5 @@
 def calculator():
-    # TODO: Retorne o resultado da adição dos números informados pelo usuário
-    pass
+    input1 = int(input())
+    input2 = int(input())
+    return(input1 + input2)
+

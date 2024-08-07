@@ -1,10 +1,16 @@
 def has_letter(letter, input_word):
-    # TODO: Retorne True ou False para a existência da letra (letter) no texto informado (string)
-    pass
+    resultado = False
+    Letter = input()
+    input_word = input()
+    for i in input_word:
+        if i == Letter:
+            resultado == True
+    return(resultado)
+
 
 def uper_case(input_word):
-    # TODO: Retorne o valor to texto todo em letras maiúsculas
-    pass
+    input_word = input()
+    return()
 
 
 def lower_case(input_word):

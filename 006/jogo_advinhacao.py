@@ -1,5 +1,5 @@
 import random   
-
+ 
 def adivinha():
     numero = random.randint(0,100)
     tentativa = 1

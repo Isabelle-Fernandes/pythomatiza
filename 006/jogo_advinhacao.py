@@ -2,14 +2,16 @@ import random
 
 def adivinha():
     numero = random.randint(0,100)
-    print(numero)
-    valor = int(input('digite um numero: '))
+    tentativa = 1
+    valor = int(input('digite um palpite: '))
     while(valor != numero):
+        tentativa += 1
         if valor < numero:
-            valor = int(input('Valor MENOR que o numero. Digite novamente: '))
+            print('O palpite', valor, 'é MENOR que o número.')
+            valor = int(input('Digite outro palpite: '))
         else:
-            valor = int(input('Valor MAIOR que o numero. Digite novamente: '))
-    print('Parabéns, você acertou!')
-
-
+            print('O palpite', valor, 'é MAIOR que o número.')
+            valor = int(input('Digite outro palpite: '))
+    print('Parabéns, você acertou na tentativa:',tentativa)
+ 
 adivinha()

@@ -1,7 +1,7 @@
 import math
 
 def circle_area(radius):
-    pi = math.pi
+    pi = 3.14
     area = pi*radius**2
     return(round(area,2))
 
